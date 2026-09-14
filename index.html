@@ -14,10 +14,10 @@
       line-height: 1.6;
     }
 
-    /* 1. LOGO STRIP (dark teal) */
+    /* 1. DARK TEAL LOGO STRIP (THICK) */
     header {
       background-color: #0f5c66;
-      padding: 30px;
+      padding: 35px;
       text-align: center;
     }
 
@@ -29,60 +29,72 @@
       font-weight: 600;
     }
 
-    /* 2. SLOGAN STRIP (light teal) */
+    /* 2. LIGHT TEAL SLOGAN STRIP (THIN) */
     .slogan {
       background-color: #93c0bb;
       text-align: center;
-      padding: 25px 20px;
+      padding: 12px 20px; /* thinner line */
     }
 
     .slogan p {
-      margin: 5px 0;
-      font-size: 22px;
+      margin: 3px 0;
+      font-size: 20px;
       font-weight: 500;
       color: #0f5c66;
     }
 
-    /* 3. MAIN CONTENT (very light orange) */
+    /* 3. MAIN CONTENT (VERY LIGHT ORANGE) */
     .content {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 50px auto;
-      background: #fce9d8; /* very light orange, almost white */
+      background: #fef3e7; /* almost white orange */
       padding: 50px;
       border-radius: 20px;
       box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-      border: 3px solid #ea9883; /* coral accent */
+      border: 3px solid #ea9883;
+      display: flex;
+      gap: 40px;
     }
 
-    .content h2 {
+    /* LEFT TEXT BLOCK */
+    .text-block {
+      flex: 1.2;
+    }
+
+    .text-block h2 {
       color: #0f5c66;
       font-size: 30px;
       margin-bottom: 25px;
-      text-align: center;
       font-weight: 600;
     }
 
-    .content p {
+    .text-block p {
       font-size: 18px;
       margin-bottom: 18px;
+      color: #ffffff; /* almost white text */
     }
 
-    /* IMAGE ROW */
-    .images {
+    /* RIGHT IMAGE STAIRCASE */
+    .image-block {
+      flex: 0.8;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       gap: 25px;
-      margin-top: 40px;
-      flex-wrap: wrap;
+      justify-content: flex-start;
     }
 
-    .images img {
-      width: 260px;
-      height: auto;
+    .image-block img {
+      width: 100%;
       border-radius: 18px;
       box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
       border: 3px solid #ea9883;
     }
+
+    /* staircase effect */
+    .image-block img:nth-child(1) { margin-top: 0px; }
+    .image-block img:nth-child(2) { margin-left: 20px; }
+    .image-block img:nth-child(3) { margin-left: 40px; }
+
   </style>
 </head>
 
@@ -101,33 +113,37 @@
 
 <!-- 3. MAIN CONTENT -->
 <div class="content">
-  <h2>Par zīmolu</h2>
 
-  <p>LR. ENSO ir radošs zīmols, kurā satiekas apģērbs, rotas un roku darba skaistums.</p>
+  <!-- LEFT TEXT -->
+  <div class="text-block">
+    <h2>Par zīmolu</h2>
 
-  <p>Radīts tiem, kuri novērtē īpašas detaļas, dabisku eleganci un lietas, kurām ir sava sajūta.</p>
+    <p>LR. ENSO ir radošs zīmols, kurā satiekas apģērbs, rotas un roku darba skaistums.</p>
 
-  <p>No mazākajiem līdz lielajiem.<br>
-     No ikdienas līdz īpašiem mirkļiem.</p>
+    <p>Radīts tiem, kuri novērtē īpašas detaļas, dabisku eleganci un lietas, kurām ir sava sajūta.</p>
 
-  <p>Katrs apģērbs un katra rota top ar domu par cilvēku, kurš to nēsās — par viņa individualitāti, noskaņu un stāstu.</p>
+    <p>No mazākajiem līdz lielajiem.<br>
+       No ikdienas līdz īpašiem mirkļiem.</p>
 
-  <p>Vienkārši. Īsti. Īpaši.</p>
+    <p>Katrs apģērbs un katra rota top ar domu par cilvēku, kurš to nēsās — par viņa individualitāti, noskaņu un stāstu.</p>
 
-  <p>Es ticu, ka skaistums slēpjas detaļās.</p>
+    <p>Vienkārši. Īsti. Īpaši.</p>
 
-  <p>Auduma pieskārienā.<br>
-     Krāsu saskaņā.<br>
-     Mazā, rūpīgi izvēlētā rotā.<br>
-     Un sajūtā, ko piedzīvojam, kad atrodam kaut ko patiesi savu.</p>
+    <p>Es ticu, ka skaistums slēpjas detaļās.</p>
 
-  <p>LR. ENSO — radīts, lai Tu justos Tu pats.</p>
+    <p>Auduma pieskārienā.<br>
+       Krāsu saskaņā.<br>
+       Mazā, rūpīgi izvēlētā rotā.<br>
+       Un sajūtā, ko piedzīvojam, kad atrodam kaut ko patiesi savu.</p>
 
-  <!-- 3 IMAGES -->
-  <div class="images">
-    <img src="https://via.placeholder.com/260x350/fce9d8/ffffff?text=Foto+1" alt="">
-    <img src="https://via.placeholder.com/260x350/fce9d8/ffffff?text=Foto+2" alt="">
-    <img src="https://via.placeholder.com/260x350/fce9d8/ffffff?text=Foto+3" alt="">
+    <p>LR. ENSO — radīts, lai Tu justos Tu pats.</p>
+  </div>
+
+  <!-- RIGHT IMAGE STAIRCASE -->
+  <div class="image-block">
+    <img src="https://via.placeholder.com/300x380/fef3e7/ffffff?text=Foto+1" alt="">
+    <img src="https://via.placeholder.com/300x380/fef3e7/ffffff?text=Foto+2" alt="">
+    <img src="https://via.placeholder.com/300x380/fef3e7/ffffff?text=Foto+3" alt="">
   </div>
 
 </div>
