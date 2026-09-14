@@ -14,9 +14,9 @@
       line-height: 1.6;
     }
 
-    /* LOGO STRIP */
+    /* 1. LOGO STRIP (dark teal) */
     header {
-      background-color: #0f5c66; /* Deep Teal */
+      background-color: #0f5c66;
       padding: 30px;
       text-align: center;
     }
@@ -24,35 +24,34 @@
     header h1 {
       margin: 0;
       font-size: 42px;
-      color: #93c0bb; /* Mint */
+      color: #93c0bb;
       letter-spacing: 2px;
       font-weight: 600;
     }
 
-    /* SLOGAN STRIP */
+    /* 2. SLOGAN STRIP (light teal) */
     .slogan {
-      background-color: #93c0bb; /* Light Teal */
+      background-color: #93c0bb;
       text-align: center;
       padding: 25px 20px;
-      border-bottom: 3px solid #0f5c66;
     }
 
     .slogan p {
       margin: 5px 0;
       font-size: 22px;
       font-weight: 500;
-      color: #0f5c66; /* Deep Teal text */
+      color: #0f5c66;
     }
 
-    /* MAIN CONTENT BLOCK */
+    /* 3. MAIN CONTENT (very light orange) */
     .content {
       max-width: 900px;
       margin: 50px auto;
-      background: #f7c7a3; /* Soft pastel orange */
+      background: #fce9d8; /* very light orange, almost white */
       padding: 50px;
       border-radius: 20px;
       box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-      border: 3px solid #ea9883; /* Coral accent */
+      border: 3px solid #ea9883; /* coral accent */
     }
 
     .content h2 {
@@ -68,13 +67,13 @@
       margin-bottom: 18px;
     }
 
-    /* IMAGE SECTION */
+    /* IMAGE ROW */
     .images {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 25px;
       margin-top: 40px;
+      flex-wrap: wrap;
     }
 
     .images img {
@@ -89,15 +88,18 @@
 
 <body>
 
+<!-- 1. LOGO -->
 <header>
   <h1>LR. ENSO</h1>
 </header>
 
+<!-- 2. SLOGAN -->
 <div class="slogan">
   <p>Wear your story.</p>
   <p>Create your own circle.</p>
 </div>
 
+<!-- 3. MAIN CONTENT -->
 <div class="content">
   <h2>Par zīmolu</h2>
 
@@ -121,11 +123,11 @@
 
   <p>LR. ENSO — radīts, lai Tu justos Tu pats.</p>
 
-  <!-- IMAGE GALLERY (you will add real images later) -->
+  <!-- 3 IMAGES -->
   <div class="images">
-    <img src="https://via.placeholder.com/260x350/93c0bb/ffffff?text=Foto+1" alt="">
-    <img src="https://via.placeholder.com/260x350/ea9883/ffffff?text=Foto+2" alt="">
-    <img src="https://via.placeholder.com/260x350/0f5c66/ffffff?text=Foto+3" alt="">
+    <img src="https://via.placeholder.com/260x350/fce9d8/ffffff?text=Foto+1" alt="">
+    <img src="https://via.placeholder.com/260x350/fce9d8/ffffff?text=Foto+2" alt="">
+    <img src="https://via.placeholder.com/260x350/fce9d8/ffffff?text=Foto+3" alt="">
   </div>
 
 </div>
