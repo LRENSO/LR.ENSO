@@ -2,92 +2,78 @@
 <html lang="lv">
 <head>
   <meta charset="UTF-8">
-  <title>LR.ENSO</title>
+  <title>LR. ENSO</title>
 
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #d8cfc0; /* Warm sand background */
+      background-color: #d8cfc0; /* Warm Sand */
       color: #3a3a3a;
+      line-height: 1.6;
     }
 
-    /* HEADER / LOGO */
+    /* HEADER */
     header {
       background-color: #0f5c66; /* Deep Teal */
-      padding: 28px;
+      padding: 30px;
       text-align: center;
-      border-bottom: 3px solid #93c0bb; /* Mint accent */
+      border-bottom: 3px solid #93c0bb; /* Mint */
     }
 
     header h1 {
       margin: 0;
-      font-size: 38px;
-      color: #93c0bb; /* Mint logo text */
+      font-size: 40px;
+      color: #93c0bb; /* Mint */
       letter-spacing: 2px;
       font-weight: 600;
     }
 
-    /* HERO SECTION */
-    .hero {
+    /* MAIN CONTENT */
+    .content {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      border: 3px solid #ea9883; /* Coral Peach accent */
+    }
+
+    .content h2 {
+      color: #0f5c66;
+      font-size: 28px;
+      margin-bottom: 20px;
       text-align: center;
-      padding: 55px 20px;
-      background-color: #93c0bb; /* Mint */
-      border-bottom: 3px solid #ea9883; /* Coral accent */
     }
 
-    .hero h2 {
-      font-size: 30px;
-      color: #0f5c66; /* Deep Teal */
-      margin-bottom: 12px;
-    }
-
-    .hero p {
+    .content p {
       font-size: 18px;
-      color: #ffffff;
+      margin-bottom: 18px;
     }
 
-    /* PRODUCT GRID */
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 50px 20px;
-    }
-
-    .item {
-      background-color: #ffffff;
-      width: 260px;
-      padding: 22px;
-      border-radius: 18px;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    /* BUTTONS */
+    .buttons {
       text-align: center;
-      transition: transform 0.2s ease;
-      border: 2px solid #93c0bb; /* Mint border */
+      margin-top: 40px;
     }
 
-    .item:hover {
-      transform: scale(1.03);
-    }
-
-    .item img {
-      width: 100%;
-      border-radius: 14px;
-      margin-bottom: 15px;
-    }
-
-    .item h3 {
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px;
+      border-radius: 30px;
       font-size: 18px;
-      color: #0f5c66; /* Deep Teal */
-      margin-bottom: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      background-color: #0f5c66; /* Deep Teal */
+      transition: 0.2s;
     }
 
-    .item p {
-      font-size: 16px;
-      color: #ea9883; /* Coral accent */
-      font-weight: bold;
+    .btn:hover {
+      background-color: #ea9883; /* Coral Peach */
     }
   </style>
 </head>
@@ -95,34 +81,39 @@
 <body>
 
 <header>
-  <h1>LR.ENSO</h1>
+  <h1>LR. ENSO</h1>
 </header>
 
-<section class="hero">
-  <h2>Ocean Pastels Boutique</h2>
-  <p>Deep Teal • Mint • Coral Peach • Warm Sand</p>
-</section>
+<div class="content">
+  <h2>Wear your story.<br>Create your own circle.</h2>
 
-<section class="products">
-  <div class="item">
-    <img src="https://via.placeholder.com/260x260/93c0bb/ffffff?text=Mint" alt="">
-    <h3>Mint komplekts</h3>
-    <p>19,90 €</p>
-  </div>
+  <p>LR. ENSO ir radošs zīmols, kurā satiekas apģērbs, rotas un roku darba skaistums.</p>
 
-  <div class="item">
-    <img src="https://via.placeholder.com/260x260/ea9883/ffffff?text=Coral" alt="">
-    <h3>Coral Peach cepurīte</h3>
-    <p>12,50 €</p>
-  </div>
+  <p>Radīts tiem, kuri novērtē īpašas detaļas, dabisku eleganci un lietas, kurām ir sava sajūta.</p>
 
-  <div class="item">
-    <img src="https://via.placeholder.com/260x260/0f5c66/ffffff?text=Teal" alt="">
-    <h3>Deep Teal džemperis</h3>
-    <p>24,90 €</p>
+  <p>No mazākajiem līdz lielajiem.<br>
+     No ikdienas līdz īpašiem mirkļiem.</p>
+
+  <p>Katrs apģērbs un katra rota top ar domu par cilvēku, kurš to nēsās — par viņa individualitāti, noskaņu un stāstu.</p>
+
+  <p>Vienkārši. Īsti. Īpaši.</p>
+
+  <p>Es ticu, ka skaistums slēpjas detaļās.</p>
+
+  <p>Auduma pieskārienā.<br>
+     Krāsu saskaņā.<br>
+     Mazā, rūpīgi izvēlētā rotā.<br>
+     Un sajūtā, ko piedzīvojam, kad atrodam kaut ko patiesi savu.</p>
+
+  <p>LR. ENSO — radīts, lai Tu justos Tu pats.</p>
+
+  <div class="buttons">
+    <a class="btn" href="#">IEPAZĪTIES</a>
+    <a class="btn" href="#">VEIKALS</a>
   </div>
-</section>
+</div>
 
 </body>
 </html>
+
 
