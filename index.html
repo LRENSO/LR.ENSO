@@ -9,43 +9,58 @@
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #f7c7a3; /* Soft pastel orange */
+      background-color: #ffffff;
       color: #3a3a3a;
       line-height: 1.6;
     }
 
-    /* HEADER */
+    /* LOGO STRIP */
     header {
       background-color: #0f5c66; /* Deep Teal */
       padding: 30px;
       text-align: center;
-      border-bottom: 3px solid #93c0bb; /* Mint */
     }
 
     header h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 42px;
       color: #93c0bb; /* Mint */
       letter-spacing: 2px;
       font-weight: 600;
     }
 
-    /* MAIN CONTENT */
+    /* SLOGAN STRIP */
+    .slogan {
+      background-color: #93c0bb; /* Light Teal */
+      text-align: center;
+      padding: 25px 20px;
+      border-bottom: 3px solid #0f5c66;
+    }
+
+    .slogan p {
+      margin: 5px 0;
+      font-size: 22px;
+      font-weight: 500;
+      color: #0f5c66; /* Deep Teal text */
+    }
+
+    /* MAIN CONTENT BLOCK */
     .content {
-      max-width: 800px;
+      max-width: 900px;
       margin: 50px auto;
-      background: #ffffff;
-      padding: 40px;
+      background: #f7c7a3; /* Soft pastel orange */
+      padding: 50px;
       border-radius: 20px;
       box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-      border: 3px solid #ea9883; /* Coral Peach accent */
+      border: 3px solid #ea9883; /* Coral accent */
     }
 
     .content h2 {
       color: #0f5c66;
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-size: 30px;
+      margin-bottom: 25px;
       text-align: center;
+      font-weight: 600;
     }
 
     .content p {
@@ -53,27 +68,21 @@
       margin-bottom: 18px;
     }
 
-    /* BUTTONS */
-    .buttons {
-      text-align: center;
+    /* IMAGE SECTION */
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
       margin-top: 40px;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      margin: 10px;
-      border-radius: 30px;
-      font-size: 18px;
-      font-weight: 600;
-      text-decoration: none;
-      color: white;
-      background-color: #0f5c66; /* Deep Teal */
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      background-color: #ea9883; /* Coral Peach */
+    .images img {
+      width: 260px;
+      height: auto;
+      border-radius: 18px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      border: 3px solid #ea9883;
     }
   </style>
 </head>
@@ -84,8 +93,13 @@
   <h1>LR. ENSO</h1>
 </header>
 
+<div class="slogan">
+  <p>Wear your story.</p>
+  <p>Create your own circle.</p>
+</div>
+
 <div class="content">
-  <h2>Wear your story.<br>Create your own circle.</h2>
+  <h2>Par zīmolu</h2>
 
   <p>LR. ENSO ir radošs zīmols, kurā satiekas apģērbs, rotas un roku darba skaistums.</p>
 
@@ -107,10 +121,13 @@
 
   <p>LR. ENSO — radīts, lai Tu justos Tu pats.</p>
 
-  <div class="buttons">
-    <a class="btn" href="#">IEPAZĪTIES</a>
-    <a class="btn" href="#">VEIKALS</a>
+  <!-- IMAGE GALLERY (you will add real images later) -->
+  <div class="images">
+    <img src="https://via.placeholder.com/260x350/93c0bb/ffffff?text=Foto+1" alt="">
+    <img src="https://via.placeholder.com/260x350/ea9883/ffffff?text=Foto+2" alt="">
+    <img src="https://via.placeholder.com/260x350/0f5c66/ffffff?text=Foto+3" alt="">
   </div>
+
 </div>
 
 </body>
